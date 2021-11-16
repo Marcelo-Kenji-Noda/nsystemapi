@@ -26,4 +26,7 @@ TreinoAlu.init(connection);
 const Anamnese = require('../models/Anamnese');
 Anamnese.init(connection);
 
+const ConsultaAtividades = require('../models/ConsultaAtividades');
+ConsultaAtividades.init(connection);
+
 module.exports = connection;

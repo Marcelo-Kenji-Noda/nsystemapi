@@ -57,7 +57,8 @@ module.exports = function (server) {
     api.post('/anamnese/delete', AnamneseController.delete);
     api.post('/anamnese/has', AnamneseController.has);
 
-
+    const ConsultaAtividadesController = require('../controllers/ConsultaAtividadesController');
+    api.post('/consulta/findmonthyear', ConsultaAtividadesController.findMonthYear);
     /*
     /*
     * API Públicas - rotas abertas
